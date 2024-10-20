@@ -3,13 +3,13 @@ from mysql.connector import Error
 
 def create_database():
     """ Create a database in MySQL server """
-    connection = None  # Initialize connection variable
+    connection = None  
     try:
         # Establish a connection to MySQL
         connection = mysql.connector.connect(
             host='localhost',
-            user='root',  # Replace with your username if different
-            password='Yvonneboss@88'  # Replace with your password
+            user='root',  
+            password='Yvonneboss@88'  
         )
 
         if connection.is_connected():
@@ -19,7 +19,7 @@ def create_database():
     except Error as e:
         print(f"Error: {e}")
     finally:
-        if connection and connection.is_connected():  # Check if connection was established
+        if connection and connection.is_connected():  
             cursor.close()
             connection.close()
 
