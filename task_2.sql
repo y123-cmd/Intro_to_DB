@@ -33,3 +33,9 @@ CREATE TABLE order_details (
     book_id INT,
     quantity INT
 );
+
+-- Create table 'authors'
+CREATE TABLE authors (
+    author_id INT PRIMARY KEY,
+    author_name VARCHAR(255)
+);
