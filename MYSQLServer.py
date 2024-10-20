@@ -2,7 +2,7 @@ import mysql.connector
 from mysql.connector import Error
 
 try:
-    # Connect to the MySQL server (assuming localhost with default port and root user)
+    # Connect to the MySQL server
     connection = mysql.connector.connect(host='localhost', user='root', password='Yvonneboss@88')
 
     if connection.is_connected():
